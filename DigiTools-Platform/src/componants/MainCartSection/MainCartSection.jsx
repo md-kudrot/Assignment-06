@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { use } from 'react';
 import AllCart from './AllCart/AllCart';
 
-const MainCart = () => {
+const MainCart = ({ dataPromise }) => {
+    const data = use(dataPromise)
+    console.log(data)
     return (
         <div className='mx-auto container'>
             <div className="text-center mt-20 space-y-6">
@@ -12,8 +14,13 @@ const MainCart = () => {
                     <button className="btn bg-[#4f39f6] text-white rounded-2xl">Cart(2)</button>
                 </div>
             </div>
+            <div className="grid grid-cols-4 gap-4 p-10">
+                {
+                    data.map(item => <AllCart item={item}></AllCart>)
+                }
+            </div>
 
-        <AllCart></AllCart>
+
 
         </div>
     );

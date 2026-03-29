@@ -1,17 +1,24 @@
+import { Suspense } from "react"
 import Hero from "./componants/Hero/Hero"
 import MainCart from "./componants/MainCartSection/MainCartSection"
 import Nav from "./componants/Nav/Nav"
 
+const fetchData = async () => {
+  const response = await fetch("/data.json")
+  return response.json();
+}
 
 
 
 function App() {
-
+  const dataPromise = fetchData()
   return (
     <>
-     <Nav></Nav>
+      <Nav></Nav>
       <Hero></Hero>
-      <MainCart></MainCart>
+      <Suspense fallback={<span className="loading loading-dots loading-xl"></span>}>
+        <MainCart dataPromise={dataPromise}></MainCart>
+      </Suspense>
     </>
   )
 }
