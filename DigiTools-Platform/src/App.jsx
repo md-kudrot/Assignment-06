@@ -1,3 +1,6 @@
+import Hero from "./componants/Hero/Hero"
+import MainCart from "./componants/MainCartSection/MainCartSection"
+import Nav from "./componants/Nav/Nav"
 
 
 
@@ -5,8 +8,9 @@ function App() {
 
   return (
     <>
-      <h1 className='bg-green-400'>kamrujjman</h1>
-      
+     <Nav></Nav>
+      <Hero></Hero>
+      <MainCart></MainCart>
     </>
   )
 }
