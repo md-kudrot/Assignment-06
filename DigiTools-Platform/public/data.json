@@ -1,0 +1,172 @@
+[
+    {
+        "id": "prod_001",
+        "name": "Starter Pack",
+        "description": "Perfect for individuals just getting started. Includes essential tools to kickstart your journey.",
+        "price": 0,
+        "period": "one-time",
+        "tag": "Free",
+        "tagType": "new",
+        "features": [
+            "5 basic templates",
+            "PDF export",
+            "Email support",
+            "1 user account",
+            "Community access"
+        ],
+        "icon": "🚀"
+    },
+    {
+        "id": "prod_002",
+        "name": "Resume Builder Pro",
+        "description": "Craft a standout resume with AI-powered suggestions and 100+ professional templates.",
+        "price": 9.99,
+        "period": "monthly",
+        "tag": "Popular",
+        "tagType": "popular",
+        "features": [
+            "100+ templates",
+            "ATS optimization",
+            "Export to PDF & Word",
+            "AI content suggestions",
+            "Unlimited revisions"
+        ],
+        "icon": "📄"
+    },
+    {
+        "id": "prod_003",
+        "name": "Career Growth Suite",
+        "description": "All-in-one career toolkit including resume, cover letter, and LinkedIn profile optimizer.",
+        "price": 19.99,
+        "period": "monthly",
+        "tag": "Best Seller",
+        "tagType": "best_seller",
+        "features": [
+            "Everything in Pro",
+            "Cover letter builder",
+            "LinkedIn optimizer",
+            "Interview prep toolkit",
+            "Priority support"
+        ],
+        "icon": "💼"
+    },
+    {
+        "id": "prod_004",
+        "name": "Team Collaboration",
+        "description": "Designed for small teams to collaborate, review, and share documents seamlessly.",
+        "price": 49.99,
+        "period": "monthly",
+        "tag": "New",
+        "tagType": "new",
+        "features": [
+            "Up to 10 users",
+            "Shared workspace",
+            "Real-time collaboration",
+            "Version history",
+            "Admin dashboard"
+        ],
+        "icon": "👥"
+    },
+    {
+        "id": "prod_005",
+        "name": "Annual Starter",
+        "description": "Get all Starter Pack features at an unbeatable yearly price — save over 30%.",
+        "price": 59.99,
+        "period": "yearly",
+        "tag": "Save 30%",
+        "tagType": "popular",
+        "features": [
+            "All Starter features",
+            "Priority email support",
+            "Early access to new templates",
+            "Monthly usage reports",
+            "Offline access"
+        ],
+        "icon": "📅"
+    },
+    {
+        "id": "prod_006",
+        "name": "Enterprise Plan",
+        "description": "Scalable solution for large organizations with advanced security, SSO, and dedicated support.",
+        "price": 199.99,
+        "period": "monthly",
+        "tag": "Enterprise",
+        "tagType": "best_seller",
+        "features": [
+            "Unlimited users",
+            "SSO & SAML integration",
+            "Dedicated account manager",
+            "Custom branding",
+            "SLA guarantee"
+        ],
+        "icon": "🏢"
+    },
+    {
+        "id": "prod_007",
+        "name": "Portfolio Builder",
+        "description": "Showcase your work with stunning online portfolios. Ideal for designers, developers, and creatives.",
+        "price": 14.99,
+        "period": "monthly",
+        "tag": "Trending",
+        "tagType": "new",
+        "features": [
+            "Custom domain support",
+            "20+ portfolio themes",
+            "Media uploads (5GB)",
+            "SEO optimization",
+            "Analytics dashboard"
+        ],
+        "icon": "🎨"
+    },
+    {
+        "id": "prod_008",
+        "name": "Job Tracker",
+        "description": "Stay organized during your job hunt with a powerful application tracker and deadline reminders.",
+        "price": 4.99,
+        "period": "monthly",
+        "tag": "New",
+        "tagType": "new",
+        "features": [
+            "Track 50+ applications",
+            "Status pipeline board",
+            "Deadline reminders",
+            "Notes & attachments",
+            "CSV export"
+        ],
+        "icon": "🗂️"
+    },
+    {
+        "id": "prod_009",
+        "name": "Pro Annual Bundle",
+        "description": "The most value-packed annual plan — includes Resume Builder Pro plus Career Growth Suite.",
+        "price": 149.99,
+        "period": "yearly",
+        "tag": "Best Value",
+        "tagType": "best_seller",
+        "features": [
+            "Everything in Career Growth Suite",
+            "2 months free",
+            "Exclusive annual templates",
+            "1-on-1 career coaching session",
+            "Badge & certification export"
+        ],
+        "icon": "⭐"
+    },
+    {
+        "id": "prod_010",
+        "name": "Lifetime Access",
+        "description": "One-time payment for lifetime access to all current and future features. Never pay again.",
+        "price": 299.99,
+        "period": "one-time",
+        "tag": "Limited Offer",
+        "tagType": "popular",
+        "features": [
+            "All features forever",
+            "Lifetime updates",
+            "Priority support for life",
+            "Exclusive lifetime badge",
+            "Early beta access"
+        ],
+        "icon": "♾️"
+    }
+]
