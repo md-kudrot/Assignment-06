@@ -2,18 +2,31 @@ import React, { use, useState } from 'react';
 import AllCart from './AllCart/AllCart';
 import SeletedCart from './SeletedCart/SeletedCart';
 
-const MainCart = ({ dataPromise , buyCart , setBuyCart}) => {
+const MainCart = ({ dataPromise, buyCart, setBuyCart }) => {
     const data = use(dataPromise)
     // console.log(data)
     const [selected, setSelected] = useState("Products")
-    console.log(selected)
+
+    // console.log(selected)
     // const [buyCart, setBuyCart] = useState([])
+
     const handleBusCart = (cart) => {
-        console.log("clicked")
-        console.log(cart)
-        setBuyCart([...buyCart.filter(i => i.name !== cart.name),cart])
+        setBuyCart([...buyCart.filter(i => i.name !== cart.name), cart])
     }
-    console.log(buyCart)
+
+
+
+    const removeCart = (cart) => {
+        // console.log(cart)
+        setBuyCart([...buyCart.filter(i => i.id !== cart.id)])
+
+    }
+
+    const Proceed = ()=>{
+        setBuyCart([])
+    }
+
+
 
     return (
         <div className='mx-auto container'>
@@ -22,7 +35,9 @@ const MainCart = ({ dataPromise , buyCart , setBuyCart}) => {
                 <p className='text-[#627382]'>Choose from our curated collection of premium digital products designed <br /> to boost your productivity and creativity.</p>
                 <div className="flex items-center justify-center">
                     <button className={`btn ${selected === "Products" ? "bg-[#4f39f6] text-white" : "bg-white text-black"}   rounded-2xl`} onClick={() => setSelected("Products")}>Products</button>
-                    <button className={`btn ${selected === "Card" ? "bg-[#4f39f6] text-white" : "bg-white text-black"}  rounded-2xl`} onClick={() => setSelected("Card")}>Cart({buyCart.length})</button>
+                    <button className={`btn ${selected === "Card" ? "bg-[#4f39f6] text-white" : "bg-white text-black"}  rounded-2xl`}
+                        onClick={() => { setSelected("Card"); }}
+                    >Cart({buyCart.length})</button>
                 </div>
             </div>
             {
@@ -34,7 +49,7 @@ const MainCart = ({ dataPromise , buyCart , setBuyCart}) => {
                     </div>
                     :
 
-                    <SeletedCart buyCart={buyCart}></SeletedCart>
+                    <SeletedCart buyCart={buyCart} removeCart={removeCart} Proceed={Proceed}></SeletedCart>
             }
 
 

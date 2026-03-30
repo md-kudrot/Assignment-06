@@ -9,17 +9,29 @@ const fetchData = async () => {
 }
 
 
+const dataPromise = fetchData()
 
 function App() {
-  const dataPromise = fetchData()
+  // const dataPromise = fetchData()
   const [buyCart, setBuyCart] = useState([])
+  // const [total, setTotal] = useState(0)
+
+
   return (
     <>
       <Nav buyCart={buyCart}></Nav>
       <Hero></Hero>
-      <Suspense fallback={<span className="loading loading-dots loading-xl"></span>}>
+      {/* <Suspense fallback={<span className="loading loading-dots loading-xl"></span>}>
         <MainCart dataPromise={dataPromise} buyCart={buyCart} setBuyCart = {setBuyCart}></MainCart>
-      </Suspense>
+        </Suspense> */}
+      <MainCart
+        dataPromise={dataPromise}
+        buyCart={buyCart}
+        setBuyCart={setBuyCart}
+        // handleBusCart={handleBusCart}
+        // handleTotal={handleTotal}
+        // removeCart={removeCart}
+      ></MainCart>
     </>
   )
 }

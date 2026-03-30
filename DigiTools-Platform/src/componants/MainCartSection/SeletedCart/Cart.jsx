@@ -1,7 +1,7 @@
 import React from 'react';
 
-const Cart = ({item}) => {
-    console.log(item)
+const Cart = ({ item, removeCart }) => {
+    // console.log(item)
     return (
         <div>
             <div className="">
@@ -16,7 +16,7 @@ const Cart = ({item}) => {
                         </div>
                     </div>
                     <div className="">
-                        <p className='text-red-500'>Remove</p>
+                        <p className='text-red-500' onClick={() => removeCart(item)}>Remove</p>
                     </div>
                 </div>
             </div>

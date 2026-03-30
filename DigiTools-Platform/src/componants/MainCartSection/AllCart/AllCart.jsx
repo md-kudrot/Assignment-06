@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const AllCart = ({ item, handleBusCart }) => {
+    const [isBuy, setIsBuy] = useState(false)
     // console.log(item)
     return (
         <div className=''>
@@ -18,17 +19,17 @@ const AllCart = ({ item, handleBusCart }) => {
                         <span className="text-xl">${item.price}/mo</span>
                     </div>
                     <ul className="mt-6 flex flex-col gap-2 text-xs basis-1">
-                        
+
                         {
                             item.features.map(f => <li key={f}>
                                 <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
                                 <span >{f}</span>
                             </li>)
                         }
-                       
+
                     </ul>
                     <div className="mt-6">
-                        <button className="btn btn-primary bg-[#4f39f6] text-white rounded-full btn-block" onClick={() => handleBusCart(item)}>Buy Now</button>
+                        <button className="btn btn-primary bg-[#4f39f6] text-white rounded-full btn-block" onClick={() => { handleBusCart(item); setIsBuy(true) }} >{isBuy ? "Selected" : "Buy Now"}</button>
                     </div>
                 </div>
             </div>
