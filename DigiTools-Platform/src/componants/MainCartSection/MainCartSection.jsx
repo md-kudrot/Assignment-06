@@ -1,24 +1,42 @@
-import React, { use } from 'react';
+import React, { use, useState } from 'react';
 import AllCart from './AllCart/AllCart';
+import SeletedCart from './SeletedCart/SeletedCart';
 
-const MainCart = ({ dataPromise }) => {
+const MainCart = ({ dataPromise , buyCart , setBuyCart}) => {
     const data = use(dataPromise)
-    console.log(data)
+    // console.log(data)
+    const [selected, setSelected] = useState("Products")
+    console.log(selected)
+    // const [buyCart, setBuyCart] = useState([])
+    const handleBusCart = (cart) => {
+        console.log("clicked")
+        console.log(cart)
+        setBuyCart([...buyCart.filter(i => i.name !== cart.name),cart])
+    }
+    console.log(buyCart)
+
     return (
         <div className='mx-auto container'>
             <div className="text-center mt-20 space-y-6">
                 <h1 className='text-6xl font-semiboldbold '>Premium Digital Tools</h1>
                 <p className='text-[#627382]'>Choose from our curated collection of premium digital products designed <br /> to boost your productivity and creativity.</p>
                 <div className="flex items-center justify-center">
-                    <button className="btn  bg-[#4f39f6] text-white rounded-2xl">Products</button>
-                    <button className="btn bg-[#4f39f6] text-white rounded-2xl">Cart(2)</button>
+                    <button className={`btn ${selected === "Products" ? "bg-[#4f39f6] text-white" : "bg-white text-black"}   rounded-2xl`} onClick={() => setSelected("Products")}>Products</button>
+                    <button className={`btn ${selected === "Card" ? "bg-[#4f39f6] text-white" : "bg-white text-black"}  rounded-2xl`} onClick={() => setSelected("Card")}>Cart({buyCart.length})</button>
                 </div>
             </div>
-            <div className="grid grid-cols-4 gap-4 p-10">
-                {
-                    data.map(item => <AllCart item={item}></AllCart>)
-                }
-            </div>
+            {
+                selected === "Products" ?
+                    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-10">
+                        {
+                            data.map(item => <AllCart key={item.id} item={item} handleBusCart={handleBusCart}></AllCart>)
+                        }
+                    </div>
+                    :
+
+                    <SeletedCart buyCart={buyCart}></SeletedCart>
+            }
+
 
 
 

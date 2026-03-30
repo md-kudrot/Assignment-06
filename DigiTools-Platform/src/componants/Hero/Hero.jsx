@@ -38,7 +38,7 @@ const Hero = () => {
             </div>
 
             <div className="py-16 bg-[#4f39f6] flex items-center justify-center">
-                <div className="flex w-[70%] items-center justify-center gap-16">
+                <div className="flex w-[70%] items-center justify-center flex-wrap gap-16">
                     <div className="border-r border-white pr-24">
                         <h1 className='text-6xl text-white font-bold'>50K+</h1>
                         <h1 className='text-[#ffffff] '>Active Users</h1>

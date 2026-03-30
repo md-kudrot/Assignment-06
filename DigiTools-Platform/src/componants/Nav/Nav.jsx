@@ -1,6 +1,6 @@
 import { ShoppingCart } from 'lucide-react';
 
-const Nav = () => {
+const Nav = ({ buyCart }) => {
     return (
         <div className="navbar bg-base-100 shadow-sm mx-auto px-28">
             <div className="navbar-start ">
@@ -31,7 +31,7 @@ const Nav = () => {
             </div>
             <div className="navbar-end flex items-center ">
                 <div className="">
-                <div className="absolute ml-4 -mt-2 h-4 w-4 text-center text-[10px] rounded-full text-white bg-red-400">1</div>
+                    <div className="absolute ml-4 -mt-2 h-4 w-4 text-center text-[10px] rounded-full text-white bg-red-400">{buyCart.length}</div>
                 <ShoppingCart  />
                 </div>
                 <p className='mx-2 '>Login</p>
