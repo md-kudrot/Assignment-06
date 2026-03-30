@@ -2,6 +2,8 @@ import { Suspense, useState } from "react"
 import Hero from "./componants/Hero/Hero"
 import MainCart from "./componants/MainCartSection/MainCartSection"
 import Nav from "./componants/Nav/Nav"
+import GetStart from "./componants/GetStart/GetStart"
+import { ToastContainer } from 'react-toastify';
 
 const fetchData = async () => {
   const response = await fetch("/data.json")
@@ -32,6 +34,11 @@ function App() {
         // handleTotal={handleTotal}
         // removeCart={removeCart}
       ></MainCart>
+
+      <GetStart></GetStart>
+
+      <ToastContainer position="top-center"
+        autoClose={1000}></ToastContainer>
     </>
   )
 }

@@ -1,6 +1,7 @@
 import React, { use, useState } from 'react';
 import AllCart from './AllCart/AllCart';
 import SeletedCart from './SeletedCart/SeletedCart';
+import { toast } from 'react-toastify';
 
 const MainCart = ({ dataPromise, buyCart, setBuyCart }) => {
     const data = use(dataPromise)
@@ -12,18 +13,21 @@ const MainCart = ({ dataPromise, buyCart, setBuyCart }) => {
 
     const handleBusCart = (cart) => {
         setBuyCart([...buyCart.filter(i => i.name !== cart.name), cart])
+        toast.success("added successfuly")
     }
-
-
-
+    
+    
+    
     const removeCart = (cart) => {
         // console.log(cart)
         setBuyCart([...buyCart.filter(i => i.id !== cart.id)])
-
+        toast.warning("Delete successfuly")
+        
     }
-
+    
     const Proceed = ()=>{
         setBuyCart([])
+        toast.error("Delete all successfuly")
     }
 
 

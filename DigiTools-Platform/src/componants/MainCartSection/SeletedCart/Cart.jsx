@@ -16,7 +16,7 @@ const Cart = ({ item, removeCart }) => {
                         </div>
                     </div>
                     <div className="">
-                        <p className='text-red-500' onClick={() => removeCart(item)}>Remove</p>
+                        <p className='text-red-500 cursor-pointer' onClick={() => removeCart(item)}>Remove</p>
                     </div>
                 </div>
             </div>
