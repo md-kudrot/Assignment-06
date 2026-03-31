@@ -5,8 +5,8 @@ const AllCart = ({ item, handleBusCart }) => {
     // console.log(item)
     return (
         <div className=''>
-            <div className="card bg-base-100 shadow-sm">
-                <div className="card-body">
+            <div className="card bg-base-100 shadow-sm h-full">
+                <div className="card-body flex flex-col justify-between">
                     <div className="flex justify-end">
                         <span className="badge badge-xs badge-warning">{item.tagType}</span>
                     </div>
@@ -14,7 +14,7 @@ const AllCart = ({ item, handleBusCart }) => {
                     <div className="bg-amber-100 rounded-full w-8 h-8 flex items-center justify-center">{item.icon}</div>
 
                     <div className="space-y-2">
-                        <h2 className="text-3xl font-bold">{item.name}</h2>
+                        <h2 className="text-3xl font-bold min-h-16 line-clamp-2">{item.name}</h2>
                         <p className='line-clamp-2'>{item.description}</p>
                         <span className="text-xl">${item.price}/mo</span>
                     </div>

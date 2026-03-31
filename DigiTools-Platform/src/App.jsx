@@ -33,9 +33,6 @@ function App() {
         dataPromise={dataPromise}
         buyCart={buyCart}
         setBuyCart={setBuyCart}
-        // handleBusCart={handleBusCart}
-        // handleTotal={handleTotal}
-        // removeCart={removeCart}
       ></MainCart>
 
       <GetStart></GetStart>
