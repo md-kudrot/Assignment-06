@@ -5,6 +5,7 @@ import Nav from "./componants/Nav/Nav"
 import GetStart from "./componants/GetStart/GetStart"
 import { ToastContainer } from 'react-toastify';
 import Transparent from "./componants/Transparent/Transparent"
+import Ready from "./componants/Ready/Ready"
 
 const fetchData = async () => {
   const response = await fetch("/data.json")
@@ -37,7 +38,12 @@ function App() {
       ></MainCart>
 
       <GetStart></GetStart>
-        <Transparent></Transparent>
+      <Transparent></Transparent>
+      <Ready></Ready>
+      
+      
+      
+      
       <ToastContainer position="top-center"
         autoClose={1000}></ToastContainer>
     </>

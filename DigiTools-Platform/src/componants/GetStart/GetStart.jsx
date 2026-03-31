@@ -12,7 +12,7 @@ const GetStart = () => {
                 <div className="bg-[#f9fafc] flex gap-4 items-center justify-center p-8">
                     <div className="bg-white p-6 rounded-2xl">
                         <div className="flex justify-end">
-                            <span className='bg-[#4f39f6]rounded-full h-8 w-8 text-center flex items-center justify-center'>01</span>
+                            <span className='bg-[#4f39f6]rounded-full h-8 w-8 text-center flex items-center justify-center bg-[#4F39F6] rounded-full text-white'>01</span>
                         </div>
                         <div className="flex justify-center items-center flex-col">
                             <div className="flex items-center justify-center rounded-full h-28 w-28">
@@ -26,7 +26,7 @@ const GetStart = () => {
                     </div>
                     <div className="bg-white p-6 rounded-2xl">
                         <div className="flex justify-end">
-                            <span className='bg-[#4f39f6]rounded-full h-8 w-8 text-center flex items-center justify-center'>02</span>
+                            <span className='bg-[#4f39f6]rounded-full h-8 w-8 text-center flex items-center justify-center bg-[#4F39F6] rounded-full text-white'>02</span>
                         </div>
                         <div className="flex justify-center items-center flex-col">
                             <div className="flex items-center justify-center rounded-full h-28 w-28">
@@ -41,7 +41,7 @@ const GetStart = () => {
                     </div>
                     <div className="bg-white p-6 rounded-2xl">
                         <div className="flex justify-end">
-                            <span className='bg-[#4f39f6]rounded-full h-8 w-8 text-center flex items-center justify-center'>03</span>
+                            <span className='bg-[#4f39f6]rounded-full h-8 w-8 text-center flex items-center justify-center bg-[#4F39F6] rounded-full text-white'>03</span>
                         </div>
                         <div className="flex justify-center items-center flex-col">
                             <div className="flex items-center justify-center rounded-full h-28 w-28">
