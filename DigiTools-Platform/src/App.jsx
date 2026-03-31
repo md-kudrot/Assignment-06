@@ -6,6 +6,7 @@ import GetStart from "./componants/GetStart/GetStart"
 import { ToastContainer } from 'react-toastify';
 import Transparent from "./componants/Transparent/Transparent"
 import Ready from "./componants/Ready/Ready"
+import Footer from "./componants/Footer/Footer"
 
 const fetchData = async () => {
   const response = await fetch("/data.json")
@@ -40,7 +41,7 @@ function App() {
       <GetStart></GetStart>
       <Transparent></Transparent>
       <Ready></Ready>
-      
+      <Footer></Footer>
       
       
       
