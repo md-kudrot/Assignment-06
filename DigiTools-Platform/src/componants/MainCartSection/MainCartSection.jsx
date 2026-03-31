@@ -27,7 +27,7 @@ const MainCart = ({ dataPromise, buyCart, setBuyCart }) => {
     
     const Proceed = ()=>{
         setBuyCart([])
-        toast.error("Delete all successfuly")
+        toast.success("Proceed all successfuly")
     }
 
 
