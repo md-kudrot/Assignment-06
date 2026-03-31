@@ -2,7 +2,7 @@ import { ShoppingCart } from 'lucide-react';
 
 const Nav = ({ buyCart }) => {
     return (
-        <div className="navbar bg-base-100 shadow-sm mx-auto px-28">
+        <div className="navbar bg-base-100 shadow-sm w-full fixed top-0 left-0 px-28 z-50">
             <div className="navbar-start ">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -31,7 +31,10 @@ const Nav = ({ buyCart }) => {
             </div>
             <div className="navbar-end flex items-center ">
                 <div className="">
-                    <div className="absolute ml-4 -mt-2 h-4 w-4 text-center text-[10px] rounded-full text-white bg-red-400">{buyCart.length}</div>
+                    {
+                        buyCart.length > 0 && <div className="absolute ml-4 -mt-2 h-4 w-4 text-center text-[10px] rounded-full text-white bg-red-400">{buyCart.length}</div>
+                    }
+                    
                 <ShoppingCart  />
                 </div>
                 <p className='mx-2 '>Login</p>

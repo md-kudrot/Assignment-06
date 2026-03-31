@@ -46,7 +46,7 @@ const MainCart = ({ dataPromise, buyCart, setBuyCart }) => {
             </div>
             {
                 selected === "Products" ?
-                    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-10">
+                    <div className="grid grid-cols-2 md:grid-cols-3  gap-4 p-10">
                         {
                             data.map(item => <AllCart key={item.id} item={item} handleBusCart={handleBusCart}></AllCart>)
                         }

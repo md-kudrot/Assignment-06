@@ -9,7 +9,7 @@ const GetStart = () => {
             <div className="text-center mt-20 space-y-6">
                 <h1 className='text-6xl font-semiboldbold '>Get Started in 3 Steps</h1>
                 <p className='text-[#627382]'>Start using premium digital tools in minutes, not hours.</p>
-                <div className="bg-[#f9fafc] flex gap-4 items-center justify-center p-8">
+                <div className="bg-[#f9fafc] flex flex-wrap gap-4 items-center justify-center p-8">
                     <div className="bg-white p-6 rounded-2xl">
                         <div className="flex justify-end">
                             <span className='bg-[#4f39f6]rounded-full h-8 w-8 text-center flex items-center justify-center bg-[#4F39F6] rounded-full text-white'>01</span>

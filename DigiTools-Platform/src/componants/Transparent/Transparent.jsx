@@ -7,7 +7,7 @@ const Transparent = () => {
                 <h1 className='text-6xl font-semiboldbold '>Simple, Transparent Pricing</h1>
                 <p className='text-[#627382]'>Choose the plan that fits your needs. Upgrade or downgrade anytime.</p>
 
-                <div className="flex gap-4 items-center justify-center py-6">
+                <div className="flex flex-wrap gap-4 items-center justify-center py-6">
                     <div className="card w-96  bg-[#F9FAFC] shadow-sm">
                         <div className="card-body">
                             <div className="flex flex-col items-start">
