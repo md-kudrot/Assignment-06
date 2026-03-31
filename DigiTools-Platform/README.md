@@ -1,12 +1,40 @@
-# React + Vite
+# 🛍️ DigiTools-Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> **Premium Digital Tools Marketplace** - A modern e-commerce platform for discovering and purchasing AI tools, design assets, templates, and productivity software.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📝 Description
 
-## Expanding the ESLint configuration
+DigiTools-Platform is a modern, fully responsive e-commerce platform built with React that allows users to browse and purchase premium digital tools, AI software, design assets, and productivity templates. Features a smart shopping cart system with real-time updates and cart counter in the navbar.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+## 🛠️ Technologies Used
+
+- **React** - UI Library
+- **Tailwind CSS** - Styling
+- **DaisyUI** - UI Components
+- **Lucide React** - Icons
+- **React-Toastify** - Notifications
+- **Vite** - Build Tool
+
+---
+
+## 3 Key Features
+
+### 1️⃣ **Smart Shopping Cart System**
+- ✅ Add/remove products with real-time updates
+- ✅ Live cart counter in navbar (trolley icon)
+- ✅ Visual feedback with "Selected" button status
+- ✅ Persistent state management with React hooks
+
+### 2️⃣ **Responsive & Modern UI**
+- ✅ Mobile-first design (fully responsive)
+- ✅ Beautiful DaisyUI components
+- ✅ Works perfectly on mobile, tablet, and desktop
+
+### 3️⃣ **Product Discovery & Management**
+- ✅ Toggle between Products and Cart views
+- ✅ Detailed product cards with pricing and features
+- ✅ Category tags and feature lists with checkmarks
+- ✅ Professional hero section and stats display
+
